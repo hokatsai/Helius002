@@ -1,0 +1,56 @@
+{
+  "basic_info": {
+    "url": "https://www.youtube.com/watch?v=CDVKZJdp2Iw",
+    "platform": "youtube",
+    "video_id": "CDVKZJdp2Iw",
+    "title": "我問了一個負債3000萬的人，怎麼財富自由？",
+    "creator": "早安傑森",
+    "thumbnail_url": "https://i.ytimg.com/vi/CDVKZJdp2Iw/hqdefault.jpg",
+    "description": "影片裡提到的課程\n〈個人財務逆向工程〉\nhttps://withwind.co/Z3R6l\n\n❝ 其他早安傑森 ❞\n早安森週報｜https://morningjason.com/e-mail/\n早安傑森 IG｜https://www.instagram.com/morning.jason/\n早安傑森Facebook｜https://www.facebook.com/jason.morningcall/"
+  },
+  "confidence": "medium",
+  "core_topic": "我問了一個負債3000萬的人，怎麼財富自由？",
+  "click_logic": [
+    "Check title for contrast/conflict",
+    "Look for promised result or curiosity gap",
+    "Map identity or anxiety trigger"
+  ],
+  "structure_breakdown": {
+    "hook": [
+      "影片裡提到的課程 〈個人財務逆向工程〉 https://withwind.",
+      "co/Z3R6l ❝ 其他早安傑森 ❞ 早安森週報｜https://morningjason."
+    ],
+    "setup": [
+      "影片裡提到的課程 〈個人財務逆向工程〉 https://withwind.",
+      "co/Z3R6l ❝ 其他早安傑森 ❞ 早安森週報｜https://morningjason."
+    ],
+    "reframe": [
+      "com/e-mail/ 早安傑森 IG｜https://www.",
+      "jason/ 早安傑森Facebook｜https://www."
+    ],
+    "proof_or_examples": [],
+    "close_or_cta": []
+  },
+  "hooks": [
+    "影片裡提到的課程 〈個人財務逆向工程〉 https://withwind.",
+    "co/Z3R6l ❝ 其他早安傑森 ❞ 早安森週報｜https://morningjason.",
+    "com/e-mail/ 早安傑森 IG｜https://www.",
+    "instagram.",
+    "com/morning."
+  ],
+  "key_lines": [
+    "影片裡提到的課程 〈個人財務逆向工程〉 https://withwind.",
+    "co/Z3R6l ❝ 其他早安傑森 ❞ 早安森週報｜https://morningjason.",
+    "com/e-mail/ 早安傑森 IG｜https://www.",
+    "jason/ 早安傑森Facebook｜https://www."
+  ],
+  "cta_candidates": [],
+  "style_guess": "unknown",
+  "helius_angles": [
+    "Turn this into 3 Chinese short-video titles",
+    "Extract a reusable hook and CTA",
+    "Map to MoneyXYZ / Dan Koe / 認知便利店 if relevant"
+  ],
+  "transcript_source": null,
+  "pipeline_confidence_note": "metadata-only"
+}

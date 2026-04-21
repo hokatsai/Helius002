@@ -1,0 +1,170 @@
+# Helius-002 全局配置
+# 所有路径相对于 Helius-002 根目录
+
+system:
+  name: Helius-002
+  version: "2.0.0"
+  workspace_root: workspace
+
+paths:
+  # 输入素材（下载的视频、原始文件）
+  inputs: workspace/inputs/
+
+  # 临时文件（转录、清理中间产物）
+  temp: workspace/temp/
+
+  # 最终输出（整理好的素材库、生成的脚本）
+  outputs: workspace/outputs/
+
+  # 文档
+  docs: docs/
+
+# 视频下载配置
+video_download:
+  # 质量优先级：AVC(H.264) > AV1，M4A 音频
+  preferred_format: "bv*[vcodec^=avc1][height<=1080][fps<=60]+ba[ext=m4a]"
+  max_height: 1080
+  max_fps: 60
+  # 下载线程数
+  concurrent_fragments: 8
+  # 重试策略
+  retries: "infinite"
+  fragment_retries: "infinite"
+  # 合并格式
+  merge_format: mp4
+  # Cookie 来源优先级
+  cookie_source:
+    - browser: chrome
+    - fallback: cookies.txt
+
+# 字幕/转录配置
+transcription:
+  # 字幕语言优先级
+  language_priority:
+    - zh-Hant
+    - en
+    - zh-Hans
+  # Whisper 模型
+  whisper_model: whisper-1
+  # 字幕格式
+  subtitle_formats:
+    - vtt
+    - srt
+  # API 提供者
+  whisper_provider: openai
+
+# 素材整理配置
+organizer:
+  # 去重参数
+  dedupe:
+    enabled: false
+    max_hash_mb: 50
+    duplicate_dir: _duplicates
+  # 输出结构
+  library:
+    by_video_id: final/library/by_video_id
+    intermediate: intermediate
+  # 索引格式
+  index_format: tsv
+
+# 脚本生成配置（MoneyXYZ 三角哲学）
+script_generator:
+  # 三角哲学权重
+  triangle:
+    contrarian_truth: true   # 认知反差
+    rational_evidence: true  # 理性证据
+    emotional_resonance: true # 感性共鸣
+  # 脚本结构
+  structure:
+    hook_seconds: 15
+    evidence_seconds: 30
+    core_argument_seconds: 45
+    twist_seconds: 15
+    cta_seconds: 5
+    total_shortform: 90   # 90s 短片
+    total_longform: 900   # 10-15min 长片
+  # 引用要求
+  citation:
+    required: true
+    sources:
+      - 书籍
+      - 学术论文
+      - 权威数据
+  case_injection:
+    required: true
+    min_cases_longform: 2
+    min_cases_shortform: 1
+    priority:
+      - 用户真实案例
+      - 公开真实案例
+      - 典型生活场景
+    rules:
+      - 抽象观点后尽快补具体案例
+      - 不编造可核查的假事实
+      - 合成故事应写成典型情境
+  # 斜杠指令
+  slash_commands:
+    - /money
+    - /hook
+    - /refine
+    - /check
+
+# TTS 配置
+tts:
+  provider: openai
+  default_voice: onyx
+  default_speed: 1.0
+  voices:
+    openai:
+      - alloy
+      - echo
+      - fable
+      - onyx
+      - nova
+      - shimmer
+  # BGM 风格（对应 v1 VideoMachine-Agent.toml）
+  bgm_styles:
+    - LoFi
+    - Ambient
+    - Synthwave
+    - Minimal Piano
+  bgm_bpm_range: [70, 95]
+  emotional_tone:
+    - 清醒
+    - 孤独
+    - 克制
+    - 带一点希望
+
+# 频道分析配置（8 大内容支柱）
+channel_analysis:
+  pillars:
+    - 心智觉醒与反直觉洞察
+    - 情绪与自律系统
+    - 学习与输出框架
+    - 时间管理与生产力
+    - 沟通影响力与成交思维
+    - 财务意识与资产配置
+    - 创作者/一人公司与商业增长
+    - AI 时代技能与趋势
+  # 标题公式（从 v1 迁移）
+  title_formulas:
+    - "Why / How / The reason…"
+    - "Watch this if…"
+    - "I did X for N days"
+    - "给我【X】秒，我让你【直接结果】"
+    - "【N】个残酷真相 / 【N】件我戒掉的事"
+    - "1 个框架让【A】变【B】"
+    - "Evidence-based【___】：我只做真正有效的【3–5】件事"
+    - "我如何做到【可量化成果】"
+  # Topic Filter
+  topic_filter:
+    demand: true
+    differentiation: true
+    conversion: true
+    roi: true
+
+# API Keys（由用户填入实际值）
+apis:
+  openai_api_key: ""
+  elevenlabs_api_key: ""
+  gemini_api_key: ""

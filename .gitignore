@@ -1,0 +1,35 @@
+# Operating system and editor noise
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+06-logs/
+*.log
+
+# Downloaded media and generated audio
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.flv
+*.m4v
+*.mp3
+*.wav
+*.m4a
+
+# Large bundled/downloaded binaries and archives
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe
+workspace/temp/
+*.zip
+yt-dlp*
+ffmpeg
+
+# Local secrets
+.env

@@ -33,6 +33,8 @@ video-download
 script-generator
 → humanizer-zh
 → long-video-storyboard
+→ aroll-shooting-planner
+→ editing-execution-planner
 ```
 
 可選下游：
@@ -81,6 +83,8 @@ channel-analysis
 | 從零生成長視頻腳本 | [script-generator](../02-skills/script-generator/SKILL.md) | 主題 / 指令 | 長視頻口播稿 | 常用 |
 | 去 AI 味 / 口播自然化 | [humanizer-zh](../02-skills/humanizer-zh/SKILL.md) | 腳本 / 文案 | human 版本 | 常用 |
 | 長視頻分鏡 / 剪映清單 | [long-video-storyboard](../02-skills/long-video-storyboard/SKILL.md) | 腳本 | 分鏡 / B-roll / 剪映提示 | 常用 |
+| A-roll 拍攝計劃 | [aroll-shooting-planner](../02-skills/aroll-shooting-planner/SKILL.md) | 腳本 / 方向稿 | 提詞器 / 分段拍攝 / 檢查表 | 常用 |
+| 剪輯執行計劃 | [editing-execution-planner](../02-skills/editing-execution-planner/SKILL.md) | 分鏡 / A-roll 計劃 | 粗剪 / 精剪 / 字幕 / 導出 QA | 常用 |
 | 一稿多發 | [content-repurposer](../02-skills/content-repurposer/SKILL.md) | 長腳本 | Shorts / 小紅書 / 推文 / Newsletter | 常用 |
 | 標題封面包裝 | [packaging-optimizer](../02-skills/packaging-optimizer/SKILL.md) | 腳本 / 主題 | 標題 / 封面大字 / Hook | 常用 |
 | 分析視頻內容結構 | [video-content-analysis](../02-skills/video-content-analysis/SKILL.md) | URL / transcript | 分析報告 | 偶爾用 |
@@ -120,6 +124,8 @@ channel-analysis
 | [script-generator](../02-skills/script-generator/SKILL.md) | 從主題生成長視頻/短視頻腳本 | 常用 |
 | [humanizer-zh](../02-skills/humanizer-zh/SKILL.md) | 去 AI 感、讓口播更自然 | 常用 |
 | [long-video-storyboard](../02-skills/long-video-storyboard/SKILL.md) | 6-10 分鐘長視頻分鏡、剪映執行清單 | 常用 |
+| [aroll-shooting-planner](../02-skills/aroll-shooting-planner/SKILL.md) | A-roll 口播拍攝計劃、提詞器、現場檢查 | 常用 |
+| [editing-execution-planner](../02-skills/editing-execution-planner/SKILL.md) | 剪輯工程、粗剪精剪、字幕音頻、導出 QA | 常用 |
 | [tts](../02-skills/tts/SKILL.md) | 文字轉語音、AI 配音 | 需要配音時用 |
 
 ### 風格模板層
@@ -155,6 +161,8 @@ channel-analysis
 | `根據一本書做視頻研究` | `book-topic-research` | 書本主題研究包 |
 | `human 這個文件` / `去 AI 感` | `humanizer-zh` | 生成自然口播版本 |
 | `生成長視頻分鏡` / `剪映操作清單` | `long-video-storyboard` | 腳本轉分鏡 |
+| `生成 A-roll 拍攝計劃` | `aroll-shooting-planner` | 口播拍攝執行 |
+| `生成剪輯執行計劃` | `editing-execution-planner` | 粗剪精剪和導出 QA |
 | `/money [主題]` | `script-generator` | 三角結構長視頻腳本 |
 | `/dankoe [主題]` | `script-generator` | Dan Koe 風格腳本 |
 | `/renzhi [主題]` | `script-generator` | 認知便利店風格腳本 |

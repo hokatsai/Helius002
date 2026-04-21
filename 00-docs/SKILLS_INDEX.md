@@ -13,6 +13,7 @@
 ```text
 video-download
 → transcription
+→ web-topic-research
 → reference-script-rewriter
 → humanizer-zh
 → long-video-storyboard
@@ -74,6 +75,8 @@ channel-analysis
 |---|---|---|---|---|
 | 下載 YouTube 視頻 | [video-download](../02-skills/video-download/SKILL.md) | URL | 視頻 / 字幕 | 常用 |
 | 視頻轉文字 | [transcription](../02-skills/transcription/SKILL.md) | 視頻 / 音頻 / URL | transcript / subtitles | 常用 |
+| 網上收集素材並整理報告 | [web-topic-research](../02-skills/web-topic-research/SKILL.md) | 選題 / 個人感悟 | research notes / video direction / sources | 常用 |
+| 書本主題研究 | [book-topic-research](../02-skills/book-topic-research/SKILL.md) | 書名 / 筆記 / 本地書本 | book notes / research / video direction | 常用 |
 | 根據參考腳本重寫新腳本 | [reference-script-rewriter](../02-skills/reference-script-rewriter/SKILL.md) | `script.md` | 新腳本 / human / 分鏡 | 常用 |
 | 從零生成長視頻腳本 | [script-generator](../02-skills/script-generator/SKILL.md) | 主題 / 指令 | 長視頻口播稿 | 常用 |
 | 去 AI 味 / 口播自然化 | [humanizer-zh](../02-skills/humanizer-zh/SKILL.md) | 腳本 / 文案 | human 版本 | 常用 |
@@ -102,6 +105,8 @@ channel-analysis
 | Skill | 用途 | 狀態 |
 |---|---|---|
 | [reference-script-rewriter](../02-skills/reference-script-rewriter/SKILL.md) | 從參考腳本提煉要點，重寫新腳本 | 常用 |
+| [web-topic-research](../02-skills/web-topic-research/SKILL.md) | 圍繞選題上網收集資料並整理成研究包 | 常用 |
+| [book-topic-research](../02-skills/book-topic-research/SKILL.md) | 圍繞一本書/書本概念整理視頻研究包 | 常用 |
 | [video-content-analysis](../02-skills/video-content-analysis/SKILL.md) | 拆解視頻內容、結構、創作方法 | 偶爾用 |
 | [video-analysis](../02-skills/video-analysis/SKILL.md) | 偏短視頻/視覺規劃/14 鏡頭方案 | 偶爾用 |
 | [channel-analysis](../02-skills/channel-analysis/SKILL.md) | 頻道定位、競品、用戶畫像、內容邊界 | 偶爾用 |
@@ -146,6 +151,8 @@ channel-analysis
 | 指令 / 說法 | 對應 Skill | 用途 |
 |---|---|---|
 | `根據這個 script.md 重寫一篇相關視頻腳本` | `reference-script-rewriter` | 參考腳本二創 |
+| `上網收集資料並整理成報告` | `web-topic-research` | 選題研究和素材包 |
+| `根據一本書做視頻研究` | `book-topic-research` | 書本主題研究包 |
 | `human 這個文件` / `去 AI 感` | `humanizer-zh` | 生成自然口播版本 |
 | `生成長視頻分鏡` / `剪映操作清單` | `long-video-storyboard` | 腳本轉分鏡 |
 | `/money [主題]` | `script-generator` | 三角結構長視頻腳本 |
